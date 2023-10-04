@@ -4,66 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HelloWorld Travel</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #104c8d;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-        
-        h1 {
-            font-size: 38px;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .text {
-            font-size: 30px;
-            line-height: 1.5;
-            text-align: center;
-            margin-top: 20px;
-        }
-        .images {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        .image {
-            flex: 1;
-            padding: 10px;
-            text-align: center;
-        }
-        .image img {
-            max-width: 100%;
-            height: auto;
-        }
-        footer {
-            background-color: #104c8d;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-        .button {
-            background-color: #f0e214;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            text-decoration: none;
-            font-size: 18px;
-            cursor: pointer;
-        }
-    </style>
+    <link href="css/style.css" rel="stylesheet" media="">
 </head>
-<body>
+<body class="body">
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="/">Sistemas
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/finanzas">Finanzas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">IP-BOX</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Compras</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <header>
         <h1>HelloWorld Travel</h1>
     </header>
@@ -71,18 +40,18 @@
         <p class="text">Somos una agencia de viaje especializada en organizar tus vacaciones para que las disfrutes al 100%, te diviertas, te relajes… Decinos qué querés y nosotros lo organizamos por vos.</p>
         <div class="images">
             <div class="image">
-                <img src="sur.jpg" alt="Imagen 1">
+                <img src="img/sur.jpg" alt="Imagen 1">
             </div>
             <div class="image">
-                <img src="mza.jpg" alt="Imagen 2">
+                <img src="img/norte.webp" alt="Imagen 2">
             </div>
             <div class="image">
-                <img src="caballo.jpg" alt="Imagen 3">
+                <img src="img/mza.jpg" alt="Imagen 3">
             </div>
         </div>
     </div>
-    <footer>
-        <a class="button" href="enlace_al_ecommerce">Elegí tu viaje</a>
-    </footer>
+    <div>
+        <button type="button" class="elegi_tu_viaje" href="enlace_al_ecommerce">Elegí tu viaje</button>
+    </div>
 </body>
 </html>

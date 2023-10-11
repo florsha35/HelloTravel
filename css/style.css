@@ -35,26 +35,20 @@ header {
     color: #fff;
     text-align: left;
     padding: 8px 0;
-}
-
-
-/* Estilo para los enlaces de navegación (nav-link) */
-a{
-    color: #ffffff; /* Color de texto deseado */
-
-/* Estilos generales para restablecer los márgenes y rellenos predeterminados */
-body, ul, ol {
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilos para el encabezado */
-header {
     margin-left:0px; /* Corrección en la propiedad margin */
     width: 500px;
     font-family: Arial;
 }
 
+/* Estilo para los enlaces de navegación (nav-link) */
+a{
+    color: #ffffff; /* Color de texto deseado */
+}
+/* Estilos generales para restablecer los márgenes y rellenos predeterminados */
+body, ul, ol {
+    margin: 0;
+    padding: 0;
+}
 
 /* Estilos para listas no ordenadas y ordenadas */
 ul, ol {
@@ -96,7 +90,8 @@ ul, ol {
     text-decoration: none;
     padding: 10px 10px; /* Espaciado superior e inferior de 10px, espaciado izquierdo y derecho de 15px */
     display: block;
-    font-family: 'Signika', sans-serif;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
 }
 
 /* Estilos para el enlace cuando se coloca el cursor encima (hover) */
@@ -209,4 +204,3 @@ footer {
   margin: 0 auto; 
   width: 200px; 
 }
-

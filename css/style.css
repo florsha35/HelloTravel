@@ -37,25 +37,89 @@ header {
     padding: 8px 0;
 }
 
+
 /* Estilo para los enlaces de navegación (nav-link) */
 a{
     color: #ffffff; /* Color de texto deseado */
-    text-decoration: none; /* Elimina el subrayado */
-    font-size: 20px; /* Tamaño de fuente deseado */
-    margin-right: 60px; /* Espacio entre enlaces */
-    transition: color 0.3s; /* Transición de color suave */
-    
+
+/* Estilos generales para restablecer los márgenes y rellenos predeterminados */
+body, ul, ol {
+    margin: 0;
+    padding: 0;
 }
 
-/* Cambio de color al pasar el mouse sobre los enlaces */
-.nav-link-inicio:hover {
-    color: #FF5733; /* Color deseado al pasar el mouse */
+/* Estilos para el encabezado */
+header {
+    margin-left:0px; /* Corrección en la propiedad margin */
+    width: 500px;
+    font-family: Arial;
 }
-.nav-link-destino:hover {
-    color: #FF5733; /* Color deseado al pasar el mouse */
+
+
+/* Estilos para listas no ordenadas y ordenadas */
+ul, ol {
+    list-style: none;
 }
-.nav-link-nosotros:hover {
-    color: #FF5733; /* Color deseado al pasar el mouse */
+
+
+/* Estilos para la barra de navegación */
+.menu-horizontal {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Hace que los elementos se muestren en una fila horizontal */
+    background-color: #0f7d8a;
+    position: fixed; /* Barra de navegación fija en la parte superior */
+    top: 0; /* Barra de navegación en la parte superior de la página */
+    width: 100%; /* Ancho completo de la página */
+    z-index: 999; /* Asegura que la barra de navegación esté por encima de otros elementos */
+   
+}
+
+.menu-horizontal .nav-link {
+    margin-right: 20px; /* Espacio a la derecha de cada elemento del menú */
+}
+
+.menu-horizontal .nav-link a {
+    color: #070707; /* Color de texto deseado */
+
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 20px; /* Tamaño de fuente deseado */
+}
+
+.menu-horizontal .nav-link a:hover {
+    font-size: 120%;
+}
+/* Estilos para el menú horizontal */
+.menu-horizontal li a {
+    background-color:#0f7d8a /* Color de fondo deseado */;
+    color:rgb(255, 255, 255) /* Color del texto deseado */;
+    text-decoration: none;
+    padding: 10px 10px; /* Espaciado superior e inferior de 10px, espaciado izquierdo y derecho de 15px */
+    display: block;
+    font-family: 'Signika', sans-serif;
+}
+
+/* Estilos para el enlace cuando se coloca el cursor encima (hover) */
+.menu-horizontal li a:hover {
+    background-color:#1a93a0 /* Color de fondo deseado en hover */;
+}
+
+
+/* Estilos para los elementos de nivel superior del menú horizontal */
+.menu-horizontal > li {
+    float: left;
+}
+
+/* Estilos para ocultar el submenú */
+.menu-horizontal li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+/* Estilos para mostrar el submenú cuando se hace hover en el elemento padre */
+.menu-horizontal li:hover > ul {
+    display: block;
 }
 
 /* Estilo para el encabezado cuando está en versión móvil*/
@@ -145,3 +209,4 @@ footer {
   margin: 0 auto; 
   width: 200px; 
 }
+

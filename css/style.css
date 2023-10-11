@@ -5,6 +5,7 @@
     padding: 0;
     background-color: #f0f0f0;
 }
+
 /*
 header {
     background-color: #c8e0e2;
@@ -30,7 +31,7 @@ header {
 */
 /* Estilo para el encabezado (header) */
 header {
-    background-color: #c8e0e2;
+    background-color: #79d4dc;
     color: #fff;
     text-align: left;
     padding: 8px 0;
@@ -38,7 +39,7 @@ header {
 
 /* Estilo para los enlaces de navegación (nav-link) */
 a{
-    color: #070707; /* Color de texto deseado */
+    color: #ffffff; /* Color de texto deseado */
     text-decoration: none; /* Elimina el subrayado */
     font-size: 20px; /* Tamaño de fuente deseado */
     margin-right: 60px; /* Espacio entre enlaces */
@@ -66,23 +67,39 @@ a{
         margin: 0 10px; /* Espacio entre enlaces en dispositivos móviles */
     }
 }
+.parte-inicio {
+    text-align: center;
+    position: relative;
+}
+
+.principal-inicio {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    height: 0 auto;
+    
+}
+
 .titulo {
-    background-color: #0f7d8a;
+    position: absolute;
+    top: 15%; /* Centra verticalmente el texto */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra horizontalmente y verticalmente */
+    font-size: 45px;
+    font-family: 'Open Sans', sans-serif;
     opacity: 0.8;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 9px 0;
 }
-h1{
-  font-size: 40px;
-}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 .text {
-    font-family: 'Signika', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     text-align: justify;
     margin: 20px auto;

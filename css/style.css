@@ -1,4 +1,8 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .body{
     font-family: Arial, sans-serif;
     margin: 0;
@@ -151,38 +155,11 @@ ul, ol {
     text-align: center;
     padding: 9px 0;
 }
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-.text {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-    text-align: justify;
-    margin: 20px auto;
-    max-width: 1500px;
-    padding: 0 20px;
-}
 .images {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }  
-.images img {
-    width: 350px;
-    height: 250px;
-}
-.image {
-    flex: 1;
-    padding: 10px;
-    text-align: center;
-}
-.image img {
-    max-width: 350px;
-    height: 250px;
-}
 footer {
     background-color: #104c8d;
     color: #fff;
@@ -204,6 +181,7 @@ footer {
   margin: 0 auto; 
   width: 200px; 
 }
+
 
 /*----------------------------------------*/
 /*----------------BOX---------------------*/
@@ -279,3 +257,72 @@ footer {
     background: #0f7d8a;
     color:#fff;
 }
+
+/*..............................*/
+/*..........NOSOTROS...........*/
+.body-nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160vh;
+    font-family: 'Signika', sans-serif;
+    background-color: #f0f0f0;
+    padding: 0 20px;
+}
+/*
+.nosotros {
+    display: flex;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+*/
+
+.nosotros {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Divide en 3 partes, la primera es para la imagen, la segunda para el texto */
+    gap: 20px; /* Espacio entre las partes */
+    background-color: #fff;
+    margin: 40px;
+    padding: 20px;
+}
+
+/*
+.nosotros {
+    display: flex;
+    width: 600px;
+    height: auto;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px 2px rgba(0,0,0, .2);
+}
+*/
+.nosotros-imagen {
+    flex: 1;
+}
+.nosotros-imagen, .nosotros-contenido{
+    padding: 30px;
+}
+.nosotros-imagen img{
+    display: flex;
+    width: 150%;
+    height: auto;
+    padding: 10px;
+   
+}
+.nosotros-contenido {
+    background-color: #fff;
+    margin: 5px;
+    padding: auto;
+    text-align: justify;
+}
+.titulo-nosotros {
+    font-size: 24px;
+    color: #333;
+}
+.p-nosotros {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+

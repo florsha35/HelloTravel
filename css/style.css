@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .body{
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
@@ -38,15 +38,17 @@ header {
     background-color: #79d4dc;
     color: #fff;
     text-align: left;
-    padding: 8px 0;
-    margin-left:0px; /* Corrección en la propiedad margin */
-    width: 500px;
-    font-family: Arial;
+    padding: 0;
+    margin: 0;
+    height: 60px;
 }
 
 /* Estilo para los enlaces de navegación (nav-link) */
 a{
     color: #ffffff; /* Color de texto deseado */
+    text-decoration: none;
+    font-size: 15px; /* Reduzco el tamaño del texto del menú */
+    margin-right: 20px;
 }
 /* Estilos generales para restablecer los márgenes y rellenos predeterminados */
 body, ul, ol {
@@ -59,8 +61,9 @@ ul, ol {
     list-style: none;
 }
 
+/*----------------------------------------*/
+/*----------BARRA DE NAVEGACION-----------*/
 
-/* Estilos para la barra de navegación */
 .menu-horizontal {
     list-style: none;
     padding: 0;
@@ -69,23 +72,20 @@ ul, ol {
     position: fixed; /* Barra de navegación fija en la parte superior */
     top: 0; /* Barra de navegación en la parte superior de la página */
     width: 100%; /* Ancho completo de la página */
-    z-index: 999; /* Asegura que la barra de navegación esté por encima de otros elementos */
-   
+    z-index: 888; /* Asegura que la barra de navegación esté por encima de otros elementos */
+    height: 60px;
 }
 
 .menu-horizontal .nav-link {
-    margin-right: 20px; /* Espacio a la derecha de cada elemento del menú */
+    margin-right: 15px; /* Espacio a la derecha de cada elemento del menú */
 }
 
 .menu-horizontal .nav-link a {
-    color: #070707; /* Color de texto deseado */
-
-    text-decoration: none; /* Elimina el subrayado */
-    font-size: 20px; /* Tamaño de fuente deseado */
+    font-size: 15px; /* Tamaño de fuente deseado */
 }
 
 .menu-horizontal .nav-link a:hover {
-    font-size: 120%;
+    font-size: 100%;
 }
 /* Estilos para el menú horizontal */
 .menu-horizontal li a {
@@ -94,8 +94,7 @@ ul, ol {
     text-decoration: none;
     padding: 10px 10px; /* Espaciado superior e inferior de 10px, espaciado izquierdo y derecho de 15px */
     display: block;
-    font-size: 25px;
-    font-family: Arial, sans-serif;
+    font-size: 17px;
 }
 
 /* Estilos para el enlace cuando se coloca el cursor encima (hover) */
@@ -160,13 +159,6 @@ ul, ol {
     justify-content: space-between;
     margin-top: 20px;
 }  
-footer {
-    background-color: #104c8d;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
 /*----------------------------------------*/
 /*----------------BOX---------------------*/
 
@@ -302,4 +294,11 @@ footer {
     color: #666;
     margin: 10px 0;
 }
-
+/*..............................*/
+/*..........FOOTER...........*/
+footer {
+    background-color: #104c8d;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}

@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    
 }
 
 /*
@@ -229,71 +230,52 @@ ul, ol {
 
 /*..............................*/
 /*..........NOSOTROS...........*/
-.body-nosotros {
+.body-nos {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 160vh;
-    font-family: 'Signika', sans-serif;
-    background-color: #f0f0f0;
-    padding: 0 20px;
+    min-height: 100vh;  
 }
-/*
 .nosotros {
+    width: 1500px;
+    height: 550px;
     display: flex;
-    padding: 40px;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-*/
-
-.nosotros {
-    display: grid;
-    grid-template-columns: 1fr 2fr; /* Divide en 3 partes, la primera es para la imagen, la segunda para el texto */
-    gap: 20px; /* Espacio entre las partes */
-    background-color: #fff;
-    margin: 40px;
-    padding: 20px;
-}
-
-/*
-.nosotros {
-    display: flex;
-    width: 600px;
-    height: auto;
-    background: white;
-    border-radius: 2px;
-    box-shadow: 1px 1px 4px 2px rgba(0,0,0, .2);
-}
-*/
-.nosotros-imagen {
-    flex: 1;
-}
-.nosotros-imagen, .nosotros-contenido{
-    padding: 30px;
-}
-.nosotros-imagen img{
-    display: flex;
-    width: 150%;
-    height: auto;
-    padding: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
    
 }
-.nosotros-contenido {
-    background-color: #fff;
-    margin: 5px;
-    padding: auto;
+
+.nosotros .nosotros-imagen {
+    background: url(Nos-con-fondo.png);
+    width: 60%;
+    height: 100%;
+    background-size: cover;
+}
+
+.nosotros .nosotros-content {
+    width: 40%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50px 150px 50px;
+    padding: 10px 15px;
+}
+.nosotros-content .nosotros-text {
+    color: #104c8d;
+    font-size: 45px;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+.nosotros-content .nosotros-parrafo {
+    color: rgba(0,0,0,0.5);
+    font-size: 25px;
+    padding: 10px;
     text-align: justify;
+    margin-top: 20%;
+
 }
-.titulo-nosotros {
-    font-size: 24px;
-    color: #333;
-}
-.p-nosotros {
-    font-size: 16px;
-    color: #666;
-    margin: 10px 0;
-}
+
 /*..............................*/
 /*..........FOOTER...........*/
 footer {

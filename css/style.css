@@ -39,7 +39,7 @@ header {
     color: #fff;
     text-align: left;
     padding: 8px 0;
-    margin-left:0px; /* Corrección en la propiedad margin */
+    margin:0px; /* Corrección en la propiedad margin */
     width: 500px;
     font-family: Arial;
 }
@@ -245,6 +245,7 @@ footer {
     font-family: 'Signika', sans-serif;
     background-color: #f0f0f0;
     padding: 0 20px;
+    margin: 0;
 }
 /*
 .nosotros {
@@ -309,7 +310,7 @@ footer {
     width: 100%;
     background-color: #0f7d8a;
     flex-direction: column;
-    padding: 10px 0px;
+    padding: 30px 0;
     text-align: center;
     
 }
@@ -317,14 +318,13 @@ footer {
 .pie-de-pagina .colum{
     width: 100%;
     max-width: 1200px;
-    margin: auto;
+    margin:10 auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 50px;
 }
 
 .pie-de-pagina .colum .colum1 figure{
-    padding: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -332,6 +332,15 @@ footer {
 }
 .pie-de-pagina .colum .colum1 figure img{
     width: 200px;
+}
+.pie-de-pagina .colum .colum2 h2{
+    line-height: 2.0;
+}
+.pie-de-pagina .colum .colum3{
+    text-align: left;
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 1.5;
 }
 .red-social{
     margin-bottom: 20px;
@@ -342,7 +351,7 @@ footer {
     font-size: 34px;
     text-decoration: none;
     flex-direction: column;
-    margin: 10px 10px;
+    margin: 0px 10px;
 }
 
 

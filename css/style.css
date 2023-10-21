@@ -7,7 +7,7 @@
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #f0f0f0cd;
     
 }
 
@@ -53,13 +53,13 @@ header {
 
 /* Estilo para los enlaces de navegación (nav-link) */
 a{
-    color: #ffffff; /* Color de texto deseado */
+    color: #fff; /* Color de texto deseado */
     text-decoration: none;
     font-size: 15px; /* Reduzco el tamaño del texto del menú */
     margin-right: 20px;
 }
 /* Estilos generales para restablecer los márgenes y rellenos predeterminados */
-body, ul, ol {
+.body-barra, ul, ol {
     margin: 0;
     padding: 0;
 }
@@ -98,7 +98,7 @@ ul, ol {
 /* Estilos para el menú horizontal */
 .menu-horizontal li a {
     background-color:#0f7d8a /* Color de fondo deseado */;
-    color:rgb(255, 255, 255) /* Color del texto deseado */;
+    color:#fff; /* Color del texto deseado */;
     text-decoration: none;
     padding: 10px 10px; /* Espaciado superior e inferior de 10px, espaciado izquierdo y derecho de 15px */
     display: block;
@@ -109,25 +109,20 @@ ul, ol {
 .menu-horizontal li a:hover {
     background-color:#1a93a0 /* Color de fondo deseado en hover */;
 }
-
-
 /* Estilos para los elementos de nivel superior del menú horizontal */
 .menu-horizontal > li {
     float: left;
 }
-
 /* Estilos para ocultar el submenú */
 .menu-horizontal li ul {
     display: none;
     position: absolute;
     min-width: 140px;
 }
-
 /* Estilos para mostrar el submenú cuando se hace hover en el elemento padre */
 .menu-horizontal li:hover > ul {
     display: block;
 }
-
 /* Estilo para el encabezado cuando está en versión móvil*/
 @media (max-width: 768px) {
     header {
@@ -141,7 +136,6 @@ ul, ol {
     text-align: center;
     position: relative;
 }
-
 .principal-inicio {
     width: 100%;
     display: block;
@@ -149,7 +143,6 @@ ul, ol {
     height: 0 auto;
     
 }
-
 .titulo {
     position: absolute;
     top: 15%; /* Centra verticalmente el texto */
@@ -158,7 +151,7 @@ ul, ol {
     font-size: 45px;
     font-family: 'Open Sans', sans-serif;
     opacity: 0.8;
-    color: #ffffff;
+    color: #fff;
     text-align: center;
     padding: 9px 0;
 }
@@ -177,6 +170,7 @@ ul, ol {
 	justify-content: center;
 	align-items: center;
     font-family: sans-serif;  
+    background-color: #f8edd4;
 }
 
 .container-card{
@@ -185,6 +179,7 @@ ul, ol {
     max-width: 1100px;
     flex-wrap: wrap; /* Permite que las tarjetas se envuelvan cuando no haya suficiente espacio horizontal */
     justify-content: space-around; /* Ajusta el espacio entre las tarjetas */
+    margin-top: -150px;
 }
 
 .card{
@@ -205,7 +200,9 @@ ul, ol {
 
 .card img{
     width: 100%;
-    height: 100%;
+    height: 200px;
+    display: block;
+    object-fit: cover;
 }
 
 .card .contenido{
@@ -227,7 +224,7 @@ ul, ol {
     margin-top: 10px;
     color:#0f7d8a;
     border: 1.5px solid #0f7d8a;
-    border-radius: 4px;
+    border-radius: 6px;
     transition: all 400ms ease;
 }
 .card .contenido a:hover{
@@ -241,14 +238,12 @@ ul, ol {
     display: flex;
     align-items: center;
     justify-content: center;
-
     height: 160vh;
     font-family: 'Signika', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #fff;
     padding: 0 20px;
-
     min-height: 100vh;  
-
+    margin-bottom: -100px;
 }
 .nosotros {
     width: 1500px;
@@ -278,7 +273,7 @@ ul, ol {
 .nosotros-content .nosotros-text {
     color: #104c8d;
     font-size: 45px;
-    margin-top: 10%;
+    margin-top: 0%;
     margin-left: 20%;
 }
 .nosotros-content .nosotros-parrafo {
@@ -287,9 +282,7 @@ ul, ol {
     padding: 10px;
     text-align: justify;
     margin-top: 20%;
-
 }
-
 
 /*----------------------------------------*/
 /*---------------FOOTER-------------------*/
@@ -299,9 +292,10 @@ ul, ol {
     flex-direction: column;
     padding: 30px 0;
     text-align: center;
+    font-family: sans-serif;
+    margin-top: -150px;
     
 }
-
 .pie-de-pagina .colum{
     width: 100%;
     max-width: 1200px;
@@ -309,8 +303,8 @@ ul, ol {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 50px;
+    color: #fff;
 }
-
 .pie-de-pagina .colum .colum1 figure{
     text-align: center;
     display: flex;
@@ -322,11 +316,11 @@ ul, ol {
 }
 .pie-de-pagina .colum .colum2 h2{
     line-height: 2.0;
+   
 }
 .pie-de-pagina .colum .colum3{
     text-align: left;
     font-size: 18px;
-    font-family: sans-serif;
     line-height: 1.5;
 }
 .red-social{
@@ -334,21 +328,29 @@ ul, ol {
     margin-top:35px;
 }
 .red-social a{
-    color: #fff;
     font-size: 34px;
     text-decoration: none;
     flex-direction: column;
     margin: 0px 10px;
 }
+@media (max-width: 768px) {
+    .pie-de-pagina .colum {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+    }
 
-
-
-/*..............................*/
-/*..........FOOTER...........*/
-footer {
-    background-color: #104c8d;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    .red-social {
+        margin-top: 10px; /* Ajusta el margen superior en pantallas pequeñas */
+        margin-bottom: 10px;
+    }
 }
+Con estos cambios, el pie de página se adaptará a diferentes tamaños de pantalla y las columnas se ajustarán automáticamente. También se han realizado algunos ajustes de margen y tamaño de fuente para dispositivos móviles utilizando Media Queries. Puedes ajustar los valores según tus necesidades específicas.
+
+
+
+
+
+
+
+
+
 

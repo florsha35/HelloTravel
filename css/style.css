@@ -39,9 +39,16 @@ header {
     background-color: #79d4dc;
     color: #fff;
     text-align: left;
+
+    padding: 8px 0;
+    margin:0px; /* Corrección en la propiedad margin */
+    width: 500px;
+    font-family: Arial;
+
     padding: 0;
     margin: 0;
     height: 60px;
+
 }
 
 /* Estilo para los enlaces de navegación (nav-link) */
@@ -234,7 +241,14 @@ ul, ol {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    height: 160vh;
+    font-family: 'Signika', sans-serif;
+    background-color: #f0f0f0;
+    padding: 0 20px;
+
     min-height: 100vh;  
+
 }
 .nosotros {
     width: 1500px;
@@ -276,6 +290,59 @@ ul, ol {
 
 }
 
+
+/*----------------------------------------*/
+/*---------------FOOTER-------------------*/
+.pie-de-pagina{
+    width: 100%;
+    background-color: #0f7d8a;
+    flex-direction: column;
+    padding: 30px 0;
+    text-align: center;
+    
+}
+
+.pie-de-pagina .colum{
+    width: 100%;
+    max-width: 1200px;
+    margin:10 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+}
+
+.pie-de-pagina .colum .colum1 figure{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ;
+}
+.pie-de-pagina .colum .colum1 figure img{
+    width: 200px;
+}
+.pie-de-pagina .colum .colum2 h2{
+    line-height: 2.0;
+}
+.pie-de-pagina .colum .colum3{
+    text-align: left;
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+.red-social{
+    margin-bottom: 20px;
+    margin-top:35px;
+}
+.red-social a{
+    color: #fff;
+    font-size: 34px;
+    text-decoration: none;
+    flex-direction: column;
+    margin: 0px 10px;
+}
+
+
+
 /*..............................*/
 /*..........FOOTER...........*/
 footer {
@@ -284,3 +351,4 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+

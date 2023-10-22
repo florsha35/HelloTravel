@@ -11,29 +11,6 @@
     
 }
 
-/*
-header {
-    background-color: #c8e0e2;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-.nav-link{
-    color: #070707;
-    text-decoration: none; 
-    font-size: 20px; 
-    margin-right: 60px;
-}
-.nav-link-inicio:hover{
-    font-size: 120%;
-}
-.nav-link-nosotros:hover{
-    font-size: 120%;
-}
-.nav-link-destino:hover{
-    font-size: 120%;
-}
-*/
 /* Estilo para el encabezado (header) */
 header {
     background-color: #79d4dc;
@@ -176,7 +153,7 @@ ul, ol {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    font-family: sans-serif;  
+  font-family: sans-serif;  
 }
 
 .container-card{
@@ -238,59 +215,58 @@ ul, ol {
 /*..............................*/
 /*..........NOSOTROS...........*/
 .body-nos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 160vh;
-    font-family: 'Signika', sans-serif;
-    background-color: #f0f0f0;
-    padding: 0 20px;
-
-    min-height: 100vh;  
-
+  margin: 0;
+	flex-wrap: wrap;
+	font-family: 'Signika', sans-serif;
+	background-color: #f0f0f0;
+	padding: 20px;
+	text-align: center;
 }
 .nosotros {
-    width: 1500px;
-    height: 550px;
-    display: flex;
-    overflow: hidden;
-    background-color: #ffffff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-   
+	justify-content: space-between;
+	display: flex;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	max-width: 1500px;
+	background-color: #fff;
+	margin: 0 auto;  
+}
+/* Estilo para la imagen*/
+.nosotros-imagen {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	max-width: 40%;
+}
+  
+.nosotros-imagen img {
+	width: 100%;
+	height: auto;
+}
+/* Estilo para el contenido de la tarjeta como texto*/
+.nosotros-content {
+	flex: 2;
+	padding: 40px;
+	max-width: 60%;
+	margin-top: 10px;
+}
+  
+.nosotros-content h2 {
+	color: #104c8d;
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 10px;
 }
 
-.nosotros .nosotros-imagen {
-    background: url(Nos-con-fondo.png);
-    width: 60%;
-    height: 100%;
-    background-size: cover;
+.nosotros-content p {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 20px;
+	text-align: justify;
+	margin-top: 20px;
+	
 }
-
-.nosotros .nosotros-content {
-    width: 40%;
-    height: 100%;
-    display: grid;
-    grid-template-rows: 50px 150px 50px;
-    padding: 10px 15px;
-}
-.nosotros-content .nosotros-text {
-    color: #104c8d;
-    font-size: 45px;
-    margin-top: 10%;
-    margin-left: 20%;
-}
-.nosotros-content .nosotros-parrafo {
-    color: rgba(0,0,0,0.5);
-    font-size: 25px;
-    padding: 10px;
-    text-align: justify;
-    margin-top: 20%;
-
-}
-
-
 /*----------------------------------------*/
 /*---------------FOOTER-------------------*/
 .pie-de-pagina{

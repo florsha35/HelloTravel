@@ -16,16 +16,13 @@ header {
     background-color: #79d4dc;
     color: #fff;
     text-align: left;
-
     padding: 8px 0;
     margin:0px; /* Corrección en la propiedad margin */
     width: 500px;
     font-family: Arial;
-
     padding: 0;
     margin: 0;
     height: 60px;
-
 }
 
 /* Estilo para los enlaces de navegación (nav-link) */
@@ -77,13 +74,13 @@ ul, ol {
     background-color:#0f7d8a /* Color de fondo deseado */;
     color:rgb(255, 255, 255) /* Color del texto deseado */;
     text-decoration: none;
-    padding: 10px 10px; /* Espaciado superior e inferior de 10px, espaciado izquierdo y derecho de 15px */
+    padding: 5px 10px; /* Espaciado superior e inferior de 10px, espaciado izquierdo y derecho de 15px */
     display: block;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 /* Estilos para el enlace cuando se coloca el cursor encima (hover) */
-.menu-horizontal li a:hover {
+.menu-horizontal a:hover {
     background-color:#1a93a0 /* Color de fondo deseado en hover */;
 }
 
@@ -114,36 +111,31 @@ ul, ol {
         margin: 0 10px; /* Espacio entre enlaces en dispositivos móviles */
     }
 }
+/*----------------------------------------*/
+/*----------------INICIO--------------------*/
+
 .parte-inicio {
-    text-align: center;
     position: relative;
+    width: 100%;
+    height: 100vh;
 }
 
 .principal-inicio {
     width: 100%;
-    display: block;
-    max-width: 100%;
-    height: 0 auto;
-    
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen de fondo para que cubra el contenedor */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca la imagen de fondo detrás de otros elementos */
 }
 
-.titulo {
+.logo1 {
+    width: 40%; /* Personaliza el tamaño de tu logotipo */
     position: absolute;
-    top: 15%; /* Centra verticalmente el texto */
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centra horizontalmente y verticalmente */
-    font-size: 45px;
-    font-family: 'Open Sans', sans-serif;
-    opacity: 0.8;
-    color: #ffffff;
-    text-align: center;
-    padding: 9px 0;
+    top: 20%; /* Ajusta la posición superior (margen) según tus necesidades */
+    right: 5%; /* Ajusta la posición derecha (margen) según tus necesidades */
+    z-index: 1; /* Coloca el logotipo sobre la imagen de fondo */
 }
-.images {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}  
 /*----------------------------------------*/
 /*----------------BOX---------------------*/
 
@@ -153,7 +145,7 @@ ul, ol {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  font-family: sans-serif;  
+    font-family: sans-serif;  
 }
 
 .container-card{
@@ -215,22 +207,22 @@ ul, ol {
 /*..............................*/
 /*..........NOSOTROS...........*/
 .body-nos {
-  margin: 0;
-	flex-wrap: wrap;
-	font-family: 'Signika', sans-serif;
-	background-color: #f0f0f0;
-	padding: 20px;
-	text-align: center;
+    margin: 0;
+    flex-wrap: wrap;
+    font-family: 'Signika', sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
 }
 .nosotros {
 	justify-content: space-between;
 	display: flex;
 	border-radius: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	overflow: hidden;
 	max-width: 1500px;
 	background-color: #fff;
-	margin: 0 auto;  
+	margin: 0 auto; 
+    overflow: hidden; 
 }
 /* Estilo para la imagen*/
 .nosotros-imagen {
@@ -281,7 +273,7 @@ ul, ol {
 .pie-de-pagina .colum{
     width: 100%;
     max-width: 1200px;
-    margin:10 auto;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 50px;

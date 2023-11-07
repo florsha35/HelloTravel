@@ -11,44 +11,18 @@
     
 }
 
-/*
-header {
-    background-color: #c8e0e2;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-.nav-link{
-    color: #070707;
-    text-decoration: none; 
-    font-size: 20px; 
-    margin-right: 60px;
-}
-.nav-link-inicio:hover{
-    font-size: 120%;
-}
-.nav-link-nosotros:hover{
-    font-size: 120%;
-}
-.nav-link-destino:hover{
-    font-size: 120%;
-}
-*/
 /* Estilo para el encabezado (header) */
 header {
     background-color: #79d4dc;
     color: #fff;
     text-align: left;
-
     padding: 8px 0;
     margin:0px; /* Corrección en la propiedad margin */
     width: 500px;
     font-family: Arial;
-
     padding: 0;
     margin: 0;
     height: 60px;
-
 }
 
 /* Estilo para los enlaces de navegación (nav-link) */
@@ -100,13 +74,13 @@ ul, ol {
     background-color:#0f7d8a /* Color de fondo deseado */;
     color:#fff; /* Color del texto deseado */;
     text-decoration: none;
-    padding: 10px 10px; /* Espaciado superior e inferior de 10px, espaciado izquierdo y derecho de 15px */
+    padding: 5px 10px; /* Espaciado superior e inferior de 10px, espaciado izquierdo y derecho de 15px */
     display: block;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 /* Estilos para el enlace cuando se coloca el cursor encima (hover) */
-.menu-horizontal li a:hover {
+.menu-horizontal a:hover {
     background-color:#1a93a0 /* Color de fondo deseado en hover */;
 }
 /* Estilos para los elementos de nivel superior del menú horizontal */
@@ -132,17 +106,23 @@ ul, ol {
         margin: 0 10px; /* Espacio entre enlaces en dispositivos móviles */
     }
 }
+/*----------------------------------------*/
+/*----------------INICIO--------------------*/
+
 .parte-inicio {
-    text-align: center;
     position: relative;
+    width: 100%;
+    height: 100vh;
 }
 .principal-inicio {
     width: 100%;
-    display: block;
-    max-width: 100%;
-    height: 0 auto;
-    
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen de fondo para que cubra el contenedor */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca la imagen de fondo detrás de otros elementos */
 }
+
 .titulo {
     position: absolute;
     top: 15%; /* Centra verticalmente el texto */
@@ -155,11 +135,16 @@ ul, ol {
     text-align: center;
     padding: 9px 0;
 }
-.images {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}  
+
+
+.logo1 {
+    width: 40%; /* Personaliza el tamaño de tu logotipo */
+    position: absolute;
+    top: 20%; /* Ajusta la posición superior (margen) según tus necesidades */
+    right: 5%; /* Ajusta la posición derecha (margen) según tus necesidades */
+    z-index: 1; /* Coloca el logotipo sobre la imagen de fondo */
+
+}
 /*----------------------------------------*/
 /*----------------BOX---------------------*/
 
@@ -235,6 +220,7 @@ ul, ol {
 /*..............................*/
 /*..........NOSOTROS...........*/
 .body-nos {
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -244,23 +230,59 @@ ul, ol {
     padding: 0 20px;
     min-height: 100vh;  
     margin-bottom: -100px;
+
+    margin: 0;
+    flex-wrap: wrap;
+    font-family: 'Signika', sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+
 }
 .nosotros {
-    width: 1500px;
-    height: 550px;
-    display: flex;
-    overflow: hidden;
-    background-color: #ffffff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-   
+	justify-content: space-between;
+	display: flex;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	max-width: 1500px;
+	background-color: #fff;
+	margin: 0 auto; 
+    overflow: hidden; 
+}
+/* Estilo para la imagen*/
+.nosotros-imagen {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	max-width: 40%;
+}
+  
+.nosotros-imagen img {
+	width: 100%;
+	height: auto;
+}
+/* Estilo para el contenido de la tarjeta como texto*/
+.nosotros-content {
+	flex: 2;
+	padding: 40px;
+	max-width: 60%;
+	margin-top: 10px;
+}
+  
+.nosotros-content h2 {
+	color: #104c8d;
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 10px;
 }
 
-.nosotros .nosotros-imagen {
-    background: url(Nos-con-fondo.png);
-    width: 60%;
-    height: 100%;
-    background-size: cover;
+.nosotros-content p {
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 20px;
+	text-align: justify;
+	margin-top: 20px;
+	
 }
 
 .nosotros .nosotros-content {
@@ -284,6 +306,7 @@ ul, ol {
     margin-top: 20%;
 }
 
+
 /*----------------------------------------*/
 /*---------------FOOTER-------------------*/
 .pie-de-pagina{
@@ -299,7 +322,7 @@ ul, ol {
 .pie-de-pagina .colum{
     width: 100%;
     max-width: 1200px;
-    margin:10 auto;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 50px;
@@ -343,7 +366,10 @@ ul, ol {
         margin-bottom: 10px;
     }
 }
-Con estos cambios, el pie de página se adaptará a diferentes tamaños de pantalla y las columnas se ajustarán automáticamente. También se han realizado algunos ajustes de margen y tamaño de fuente para dispositivos móviles utilizando Media Queries. Puedes ajustar los valores según tus necesidades específicas.
+/*Con estos cambios, el pie de página se adaptará a diferentes tamaños de pantalla
+ y las columnas se ajustarán automáticamente. También se han realizado algunos
+  ajustes de margen y tamaño de fuente para dispositivos móviles utilizando
+   Media Queries. Puedes ajustar los valores según tus necesidades específicas.*/
 
 
 

@@ -16,38 +16,44 @@
 </head>
 
 <body>
-    <div class="body-barra">
+
+
+<!-------------------------- BARRA DE NAVEGACION ----------------------------->
+    <div class="body">
         <ul class="menu-horizontal">
-            <li><a class="nav-link-inicio" aria-current="page" href="#">Inicio</a></li>
-            <li><a class="nav-link-nosotros" href="#">Nosotros</a></li>
-            <li><a class="nav-link-destino" href="#">Destinos</a>
+            <li><a class="nav-link-inicio"><a aria-current="page" href="#inicio">Inicio</a></li>
+            <li><a class="nav-link-nosotros"><a href="#quienes-somos">Nosotros</a></li>
+            <li><a class="nav-link-destino"><a href="#seleccionar-destino">Destinos</a>
                 <ul class="menu-vertical">
-                    <li><a href="#">Viaja en Familia</a></li>
-                    <li><a href="#">Viaja con Amigos</a></li>
-                    <li><a href="#">Viaja Solo</a></li>
+                    <li><a href="#seleccionar-destino">Viaja en Familia</a></li>
+                    <li><a href="#seleccionar-destino">Viaja con Amigos</a></li>
+                    <li><a href="#seleccionar-destino">Viaja Solo</a></li>
                 </ul>
             <li>
         </ul>
    
     </div>
-
-    <div class="parte-inicio">
-        <img class="principal-inicio" src="img/paginaInicio.jpg" alt="principal">
+<!-------------------------- INICIO ----------------------------->
+    <div class="parte-inicio" id="inicio">
+        <img class="principal-inicio" src="img/img-fondo.png" alt="playa">
+        <img class="logo1" src="img/HellW travel.png" alt="logo">
     </div>
-    <div class="body-nos">
+<!-------------------------- NOSOTROS ----------------------------->
+    <div class="body-nos" id="quienes-somos">
         <div class="nosotros">
             <div class="nosotros-imagen">
+                <img src="img/Nos-con-fondo.png" alt="mapa de viaje">
             </div>
 
             <div class="nosotros-content">
-                <h2 class="nosotros-text"> ¿Quienes somos?</h2>
-                <p class="nosotros-parrafo">Somos una agencia de viajes especializada en brindar experiencias inolvidables a nuestros clientes. Nuestra pasión por los viajes nos impulsa a crear aventuras excepcionales en todo el mundo.Nuestro equipo de expertos está comprometido con proporcionar un servicio de alta calidad y personalizado. Trabajamos arduamente para que tus vacaciones sean inolvidables y sin preocupaciones.
+                <h2> ¿Quienes somos?</h2>
+                <p>Somos una agencia de viajes especializada en brindar experiencias inolvidables a nuestros clientes. Nuestra pasión por los viajes nos impulsa a crear aventuras excepcionales en todo el mundo.Nuestro equipo de expertos está comprometido con proporcionar un servicio de alta calidad y personalizado. Trabajamos arduamente para que tus vacaciones sean inolvidables y sin preocupaciones.
                 Contáctanos para planificar tu próximo viaje y descubrir lo que el mundo tiene reservado para ti.</p>
             </div>
         </div>
     </div>   
-
-    <div class="boxbody">
+<!-------------------------- ELECCION CONTENIDO ----------------------------->
+    <div class="boxbody" id="seleccionar-destino">
         <div class="container-card">
             <div class="card">
                 <figure>
@@ -101,6 +107,7 @@
             <h3>0 - 800 - 43556</h3>
             <p> Atención 24 hs.</p>
         </div>
+
 
         <div class="colum3">
             <p><i class="fa fa-map-marker"></i> San Rafael, Mendoza, Argentina</p> 

@@ -1,152 +1,22 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.barra-de-nav{
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+body{
+    background: #44A08D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 }
 
-/* Estilo para el encabezado (header) */
-header {
-    background-color: #79d4dc;
-    color: #fff;
-    text-align: left;
-    padding: 8px 0;
-    margin:0px; /* Corrección en la propiedad margin */
-    width: 500px;
-    font-family: Arial;
-    padding: 0;
-    margin: 0;
-    height: 60px;
+.texto-azul {
+    color: blue;
 }
 
-/* Estilo para los enlaces de navegación (nav-link) */
-a{
-    color: #ffffff; /* Color de texto deseado */
-    text-decoration: none;
-    font-size: 15px; /* Reduzco el tamaño del texto del menú */
-    margin-right: 20px;
+.navbar {
+    background-color: #333; 
+    color: white;
 }
-/* Estilos generales para restablecer los márgenes y rellenos predeterminados */
-body, ul, ol {
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilos para listas no ordenadas y ordenadas */
-ul, ol {
-    list-style: none;
-}
-
-/*----------------------------------------*/
-/*----------BARRA DE NAVEGACION-----------*/
-
-.menu-horizontal {
-    list-style: none;
-    padding: 0;
-    display: flex; /* Hace que los elementos se muestren en una fila horizontal */
-    background-color: #0f7d8a;
-    position: fixed; /* Barra de navegación fija en la parte superior */
-    top: 0; /* Barra de navegación en la parte superior de la página */
-    width: 100%; /* Ancho completo de la página */
-    z-index: 888; /* Asegura que la barra de navegación esté por encima de otros elementos */
-    height: 60px;
-}
-
-.menu-horizontal .nav-link {
-    margin-right: 15px; /* Espacio a la derecha de cada elemento del menú */
-}
-
-.menu-horizontal .nav-link a {
-    font-size: 15px; /* Tamaño de fuente deseado */
-}
-
-.menu-horizontal .nav-link a:hover {
-    font-size: 100%;
-}
-/* Estilos para el menú horizontal */
-.menu-horizontal li a {
-    background-color:#0f7d8a /* Color de fondo deseado */;
-    color:rgb(255, 255, 255) /* Color del texto deseado */;
-    text-decoration: none;
-    padding: 5px 10px; /* Espaciado superior e inferior de 10px, espaciado izquierdo y derecho de 15px */
-    display: block;
-    font-size: 20px;
-}
-
-/* Estilos para el enlace cuando se coloca el cursor encima (hover) */
-.menu-horizontal a:hover {
-    background-color:#1a93a0 /* Color de fondo deseado en hover */;
-}
-
-
-/* Estilos para los elementos de nivel superior del menú horizontal */
-.menu-horizontal > li {
-    float: left;
-}
-
-/* Estilos para ocultar el submenú */
-.menu-horizontal li ul {
-    display: none;
-    position: absolute;
-    min-width: 140px;
-}
-
-/* Estilos para mostrar el submenú cuando se hace hover en el elemento padre */
-.menu-horizontal li:hover > ul {
-    display: block;
-}
-
-/* Estilo para el encabezado cuando está en versión móvil*/
-@media (max-width: 768px) {
-    header {
-        padding: 10px; /* Reducir el espacio de relleno en dispositivos móviles */
-    }
-    .nav-link {
-        margin: 0 10px; /* Espacio entre enlaces en dispositivos móviles */
-    }
-}
-/*----------------------------------------*/
-/*----------------INICIO--------------------*/
-
-.parte-inicio {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
-
-.principal-inicio {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajusta la imagen de fondo para que cubra el contenedor */
-    top: 0;
-    left: 0;
-    z-index: -1; /* Coloca la imagen de fondo detrás de otros elementos */
-}
-
-.logo1 {
-    width: 40%; /* Personaliza el tamaño de tu logotipo */
-    position: absolute;
-    top: 20%; /* Ajusta la posición superior (margen) según tus necesidades */
-    right: 5%; /* Ajusta la posición derecha (margen) según tus necesidades */
-    z-index: 1; /* Coloca el logotipo sobre la imagen de fondo */
-}
-/*----------------------------------------*/
-/*----------------BOX---------------------*/
-
-.boxbody{
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+/*---------------CARDS-DESTINOS-------------------*/
+.card-body {
+    line-height: 0.80;
     font-family: sans-serif;  
-    background-color:#7bb1b7;
 }
 
 .container-card{
@@ -155,7 +25,6 @@ ul, ol {
     max-width: 1100px;
     flex-wrap: wrap; /* Permite que las tarjetas se envuelvan cuando no haya suficiente espacio horizontal */
     justify-content: space-around; /* Ajusta el espacio entre las tarjetas */
-    margin-top: -150px;
 }
 
 .card{
@@ -174,17 +43,11 @@ ul, ol {
     transform: translateY(-3%);
 }
 
-.card img{
-    width: 100%;
-    height: 200px;
-    display: block;
-    object-fit: cover;
-}
-
 .card .contenido{
     padding: 15px;
     text-align: center;
 }
+
 .card .contenido p{
     line-height: 1.5;
     color: #070707;
@@ -200,128 +63,36 @@ ul, ol {
     margin-top: 10px;
     color:#0f7d8a;
     border: 1.5px solid #0f7d8a;
-    border-radius: 6px;
+    border-radius: 4px;
     transition: all 400ms ease;
 }
+
 .card .contenido a:hover{
     background: #0f7d8a;
     color:#fff;
 }
 
-/*..............................*/
-/*..........NOSOTROS...........*/
-.body-nos {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 160vh;
-    font-family: 'Signika', sans-serif;
-    background-color: #fff;
-    padding: 0 20px;
-    min-height: 100vh; 
-    margin-top: -350px; 
-    margin-bottom: -350px;
-    flex-wrap: wrap;
-    font-family: 'Signika', sans-serif;
-    background-color: #ccebef;
-    padding: 20px;
-    text-align: center;
-
-}
-.nosotros {
-	justify-content: space-between;
-	display: flex;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	max-width: 1500px;
-	background-color: #fff;
-	margin: 0 auto; 
-    overflow: hidden; 
-}
-/* Estilo para la imagen*/
-.nosotros-imagen {
-	flex: 1;
-	display: flex;
-	align-items: center;
-	padding: 10px;
-	max-width: 40%;
-    object-fit: cover;
-}
-  
-.nosotros-imagen img {
-	width: 100%;
-	height: auto;
-}
-/* Estilo para el contenido de la tarjeta como texto*/
-.nosotros-content {
-	flex: 2;
-	padding: 40px;
-	max-width: 60%;
-	margin-top: 10px;
-}
-  
-.nosotros-content h2 {
-	color: #104c8d;
-	font-size: 35px;
-	text-align: center;
-	margin-bottom: 10px;
+.card {
+    margin: 10px; 
 }
 
-.nosotros-content p {
-	color: rgba(0, 0, 0, 0.5);
-	font-size: 20px;
-	text-align: justify;
-	margin-top: 20px;
-	
+.card img {
+    max-width: 100%; 
 }
 
-.nosotros .nosotros-content {
-    width: 40%;
-    height: 100%;
-    display: grid;
-    grid-template-rows: 50px 150px 50px;
-    padding: 10px 15px;
+.card-title {
+    font-size: 24px; 
 }
-.nosotros-content .nosotros-text {
-    color: #104c8d;
-    font-size: 45px;
-    margin-top: 0%;
-    margin-left: 20%;
+
+.card-text h3 {
+    font-weight: bold; 
 }
-.nosotros-content .nosotros-parrafo {
-    color: rgba(0,0,0,0.5);
-    font-size: 25px;
-    padding: 10px;
-    text-align: justify;
-    margin-top: 20%;
+
+.btn-primary {
+    background-color: #007bff; 
+    color: white; 
 }
-@media (max-width: 767px) {
-    .nosotros {
-        flex-direction: column; 
-        align-items: center;
-    }
-    .nosotros-imagen {
-        width: 100%; 
-        max-width: 100%;
-    }
-    .nosotros-content {
-        width: 100%; 
-    }
-    .nosotros-content h2 {
-        font-size: 30px; 
-    }
-    .nosotros-content p {
-        color: rgba(0, 0, 0, 0.5);
-        font-size: 20px;
-        text-align: justify;
-        margin-top: 20px;
-        margin-left: 0;
-        margin-right: 0;
-        
-    }
-}
-/*----------------------------------------*/
+
 /*---------------FOOTER-------------------*/
 .pie-de-pagina{
     width: 100%;
@@ -329,8 +100,6 @@ ul, ol {
     flex-direction: column;
     padding: 30px 0;
     text-align: center;
-    font-family: sans-serif;
-    margin-top: -150px;
     
 }
 
@@ -341,7 +110,6 @@ ul, ol {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 50px;
-    color: #fff;
 }
 
 .pie-de-pagina .colum .colum1 figure{
@@ -374,16 +142,7 @@ ul, ol {
     margin: 0px 10px;
 }
 
-@media (max-width: 768px) {
-    .pie-de-pagina .colum {
-        grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
-    }
 
-    .red-social {
-        margin-top: 10px; /* Ajusta el margen superior en pantallas pequeñas */
-        margin-bottom: 10px;
-    }
-}
 
 /*..............................*/
 /*..........FOOTER...........*/
@@ -393,4 +152,5 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
 
